@@ -1,0 +1,117 @@
+@media (max-width: 480px) {
+iframe{
+    max-width: 400px;
+    height: 225px;
+}
+.encabezado{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.menu_movil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.menu_movil a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--fondoNsolido);
+}
+.menu_sup{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+}
+.menu_sup li{
+    align-self: flex-start;
+}
+.menu_sup a{
+    text-decoration: none;
+    color: var(--fondoNsolido);
+    font-family: var(--system);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+/* +++++++++++++++++++++++++++++++++ */
+.about_us{
+    width: 100%;
+}
+.count_about_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+    gap: 40px;
+    margin: auto;
+    max-width: 480px;
+}
+.price_paquete{
+    width: 100%;
+}
+.Service_We_Offers {
+    width: 100%;
+
+}
+.contenedorvideo {
+    width: 100%;
+    position: relative;
+}
+/* ++++++++++++++++++++++++++++++++++ */
+.cont_paquetes{
+    flex-direction: column;
+}
+/* +++++++++++++++++++++++++++++++++ */
+.blog_noticias{
+    flex-direction: column;
+}
+/* +++++++++++++    galeria+++++++++++++++++++++ */
+
+.galeri {
+    grid-template-columns: 1fr;
+}
+}
+/* +++++++++++++++++++++++++++++++ */
+.Contact {
+    flex-direction: column;
+    padding: 40px 10px;
+}
+.formulario_descrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+/* ++++++++++++++++++++++++++++++ */
+.footer_up{
+    flex-direction: column;
+    padding:    40px 10px;
+}
+.colum {
+    width: 100%;
+    color: var(--fondo);
+}
+.a01 p {
+    line-height: 30px;
+}
+.footer_down{
+    flex-direction: column;
+}
+.footer_down ul{
+    flex-direction: column;
+}
+/* ++++++++++++++++++++++++++ */
