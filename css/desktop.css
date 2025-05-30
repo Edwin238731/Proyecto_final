@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
 }
-main {
-    margin-top: 100px;}
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 .exo-2{
     font-family: "Exo 2", sans-serif;
@@ -423,6 +421,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 40px 0px;
 }
 .miembros{
     display: flex;
@@ -641,7 +640,6 @@ header{
     height: 2px;
     background-color: var(--grisoscuro2);
 }
-/* +++++++++ clientes +++++++++++++++++++++++++++++ */
 /* +++++++++ blog +++++++++++++++++++++++++++++ */
 .blog {
     display: flex;
