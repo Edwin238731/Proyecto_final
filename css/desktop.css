@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
 }
+main {
+    margin-top: 100px;}
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 .exo-2{
     font-family: "Exo 2", sans-serif;
@@ -640,104 +642,6 @@ header{
     background-color: var(--grisoscuro2);
 }
 /* +++++++++ clientes +++++++++++++++++++++++++++++ */
-.clientes{
-    background-color: var(--fondoNsolido);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0px;
-}
-/* contenedor carrousel */
-#carousel {
-    max-width: 1200px;
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    position: relative;
-}
-
-/* contenido carrrousel */
-#slide-container {
-    scroll-snap-type: x mandatory;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    gap: 10px;
-    color: #000;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    width: 1200px;
-    margin: auto;
-}
-
-.slide {
-    padding: 20px;
-    scroll-snap-align: center;
-    position: relative;
-    min-width: 33%;
-    text-align: center;
-    color: white;
-}
-.slide figure{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.slide figure img{
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-}
-/* contenedor botones */
-.slide-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-/* contenedor indicadores */
-.slide-indicators {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.slide-indicator {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    padding: 5px;
-    width: 50px;
-}
-
-.slide-indicator:after {
-    content: "";
-    border: 1px black solid;
-    height: 40px;
-    width: 50px;
-    background-color: white;
-}
-
-.slide-indicator.active:after,
-.slide-indicator:hover:after {
-    background-color: #ccc;
-}
-
-/* flechas */
-.arrow {
-    text-decoration: none;
-    cursor: pointer;
-    padding: 10px;
-}
-
 /* +++++++++ blog +++++++++++++++++++++++++++++ */
 .blog {
     display: flex;
