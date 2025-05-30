@@ -6,6 +6,15 @@ iframe{
 .encabezado{
     flex-direction: column;
     align-items: flex-start;
+    width: 100% ;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--fondo);
+    box-shadow: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 25;
 }
 .menu_movil{
     display: flex;
@@ -49,7 +58,7 @@ iframe{
     padding: 0px 20px;
     gap: 40px;
     margin: auto;
-    max-width: 480px;
+    max-width: 425px;
 }
 .price_paquete{
     width: 100%;
@@ -75,7 +84,6 @@ iframe{
 .galeri {
     grid-template-columns: 1fr;
 }
-}
 /* +++++++++++++++++++++++++++++++ */
 .Contact {
     flex-direction: column;
@@ -99,7 +107,7 @@ iframe{
 /* ++++++++++++++++++++++++++++++ */
 .footer_up{
     flex-direction: column;
-    padding:    40px 10px;
+    padding: 40px 10px;
 }
 .colum {
     width: 100%;
@@ -115,3 +123,12 @@ iframe{
     flex-direction: column;
 }
 /* ++++++++++++++++++++++++++ */
+.sup-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+}

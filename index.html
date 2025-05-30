@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/desktop.css">
     <link rel="stylesheet" href="css/movil.css">
+    <link rel="stylesheet" href="css/carrousel.css">
+    <link rel="stylesheet" href="css/responsiveslides.css">
+    <link rel="stylesheet" href="css/animate.css">
     <script src="https://kit.fontawesome.com/6beabdf913.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/responsiveslides.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script src="js/wow.min.js"></script>
     <title>Pcrepair</title>
 </head>
 <body>
+    <a href="#inicio" class="circulo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <a name="inicio"></a>
     <header>
         <div class="encabezado">
             <div class="menu_movil">
@@ -37,9 +47,9 @@
                 <figure>
                     <img src="imagenes/slide1.jpeg" alt="">
                     <div class="cubierta">
-                        <h2>Repair your computer laptop</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, accusantium.</p>
-                        <a href="#">Contact us <i class="fa-solid fa-arrow-right"></i></a>
+                        <h2 class="wow animate__animated animate__fadeInDown">Repair your computer laptop</h2>
+                        <p class="wow animate__animated animate__fadeInUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, accusantium.</p>
+                        <a href="#" class="wow animate__animated animate__fadeInUp">Contact us <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </figure>
             </li>
@@ -67,25 +77,25 @@
     </section>
     <section class="popularservices">
         <div class="cont_cards">
-            <article class="cards">
+            <article class="cards wow animate__animated animate__fadeInUp">
                 <i class="fa-solid fa-laptop"></i>
                 <span>servicio</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a</p>
                 <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
             </article>
-            <article class="cards">
+            <article class="cards wow animate__animated animate__fadeInUp">
                 <i class="fa-solid fa-camera"></i>
                 <span>servicio</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a</p>
                 <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
             </article>
-            <article class="cards">
+            <article class="cards wow animate__animated animate__fadeInUp">
                 <i class="fa-brands fa-android"></i>
                 <span>servicio</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a</p>
                 <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
             </article>
-            <article class="cards">
+            <article class="cards wow animate__animated animate__fadeInUp">
                 <i class="fa-solid fa-desktop"></i>
                 <span>servicio</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem a</p>
@@ -93,7 +103,7 @@
             </article>
         </div>
     </section>
-    <section class="about_us">
+    <section class="about_us wow animate__animated animate__fadeInRight">
         <h3 class="t01">WHAT WE DO</h3>
         <h2 class="t02">About Us</h2>
         <hr class="t03">
@@ -126,7 +136,7 @@
         <h2 class="t02">About Us</h2>
         <hr class="t03"><br><br>
         <div class="galeri">
-            <div class="item1">
+            <div class="item1 about_us wow animate__animated animate__fadeInLeft">
                 <a href="#" class="cubierta_01">
                     <article class="cubierta_02">
                         <figure><img src="imagenes/service_2.jpg" alt=""></figure>
@@ -138,7 +148,7 @@
                     </article>
                 </a>
             </div>
-            <div class="item2">
+            <div class="item2 about_us wow animate__animated animate__fadeInLeft">
                 <a href="#" class="cubierta_01">
                     <article class="cubierta_02">
                         <figure><img src="imagenes/service_2.jpg" alt=""></figure>
@@ -150,7 +160,7 @@
                     </article>
                 </a>
             </div>
-            <div class="item3">
+            <div class="item3 about_us wow animate__animated animate__fadeInLeft">
                 <a href="#" class="cubierta_01">
                     <article class="cubierta_02">
                         <figure><img src="imagenes/service_3.jpg" alt=""></figure>
@@ -162,7 +172,7 @@
                     </article>
                 </a>
             </div>
-            <div class="item4">
+            <div class="item4 about_us wow animate__animated animate__fadeInRight">
                 <a href="#" class="cubierta_01">
                     <article class="cubierta_02">
                         <figure><img src="imagenes/service_4.jpg" alt=""></figure>
@@ -174,7 +184,7 @@
                     </article>
                 </a>
             </div>
-            <div class="item5">
+            <div class="item5 about_us wow animate__animated animate__fadeInRight">
                 <a href="#" class="cubierta_01">
                     <article class="cubierta_02">
                         <figure><img src="imagenes/service_4.jpg" alt=""></figure>
@@ -186,7 +196,7 @@
                     </article>
                 </a>
             </div>
-            <div class="item6">
+            <div class="item6 about_us wow animate__animated animate__fadeInRight">
                 <a href="#" class="cubierta_01">
                     <article class="cubierta_02">
                         <figure><img src="imagenes/service_6.jpg" alt=""></figure>
@@ -203,11 +213,13 @@
     <!-- ++++++++++++++++++++++++++++++++++++++ TEAM +++++++++++++++++++++++++++++++++++++ -->
     <section class="team">
         <h3 class="t01">WHAT WE DO</h3><br>
-        <h2 class="t02">About Us</h2>
+        <h2 class="t02">TEAM</h2>
         <hr class="t03"><br><br>
         <div class="miembros">
-            <div class="card-team">
-                <figure><img src="imagenes/team_1.jpg" alt=""></figure>
+            <div class="card-team wow animate__animated animate__fadeInLeft">
+                <a href="imagenes/team_1.jpg" data-fancybox="gallery" data-caption="PETER PARKER FOUNDER">
+                    <figure><img src="imagenes/team_1.jpg" alt=""></figure>
+                </a>
                 <article class="card-info">
                     <div class="redes-sociales">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -219,8 +231,10 @@
                     <h4>FUNDADOR</h4>
                 </article>
             </div>
-            <div class="card-team">
-                <figure><img src="imagenes/team_2.jpg" alt=""></figure>
+            <div class="card-team wow animate__animated animate__fadeInLeft">
+                <a href="imagenes/team_2.jpg" data-fancybox="gallery" data-caption="WANDA WILSON CO-FOUNDER">
+                    <figure><img src="imagenes/team_2.jpg" alt=""></figure>
+                </a>
                 <article class="card-info">
                     <div class="redes-sociales">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -232,8 +246,10 @@
                     <h4>FUNDADOR</h4>
                 </article>
             </div>
-            <div class="card-team">
-                <figure><img src="imagenes/team_3.jpg" alt=""></figure>
+            <div class="card-team wow animate__animated animate__fadeInLeft">
+                <a href="imagenes/team_3.jpg" data-fancybox="gallery" data-caption="BRUCE BANNER MANAGER">
+                    <figure><img src="imagenes/team_3.jpg" alt=""></figure>
+                </a>
                 <article class="card-info">
                     <div class="redes-sociales">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -245,8 +261,10 @@
                     <h4>FUNDADOR</h4>
                 </article>
             </div>
-            <div class="card-team">
-                <figure><img src="imagenes/team_4.jpg" alt=""></figure>
+            <div class="card-team wow animate__animated animate__fadeInLeft">
+                <a href="imagenes/team_4.jpg" data-fancybox="gallery" data-caption="LEX LUTHOR MANAGER">
+                    <figure><img src="imagenes/team_4.jpg" alt=""></figure>
+                </a>
                 <article class="card-info">
                     <div class="redes-sociales">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -262,38 +280,38 @@
     </section>
     <section class="resultados">
         <div class="sombra_figura">
-            <h2 class="02">Our Team Results</h2>
-            <hr class="03"><br><br>
+            <h2 class="t02">OUR TEAM RESULTS</h2>
+            <hr class="t03"><br><br>
             <div class="sup-cont">
-                <div class="cont-figura">
+                <div class="cont-figura wow animate__animated animate__fadeInLeft">
                     <div class="figura">
                         <div class="figura2"></div>
                         <article class="texto-figura">
-                            <p>105+ <br><span>Team Members</span></p>
+                            <p>105+ <br><br><span>Team Members</span></p>
                         </article>
                     </div>
                 </div>
-                <div class="cont-figura">
+                <div class="cont-figura wow animate__animated animate__fadeInLeft">
                     <div class="figura">
                         <div class="figura2"></div>
                         <article class="texto-figura">
-                            <p>215+ <br><span>Client's Feedback</span></p>
+                            <p>215+ <br><br><span>Client's Feedback</span></p>
                         </article>
                     </div>
                 </div>
-                <div class="cont-figura">
+                <div class="cont-figura wow animate__animated animate__fadeInRight">
                     <div class="figura">
                         <div class="figura2"></div>
                         <article class="texto-figura">
-                            <p>15 <br><span>Winning Awards</span></p>
+                            <p>15 <br><br><span>Winning Awards</span></p>
                         </article>
                     </div>
                 </div>
-                <div class="cont-figura">
+                <div class="cont-figura wow animate__animated animate__fadeInRight">
                     <div class="figura">
                         <div class="figura2"></div>
-                        <article class="texto-figura">
-                            <p>310 <br><span>Complete Words</span></p>
+                        <article class="texto-figura ">
+                            <p>310 <br><br><span>Complete Words</span></p>
                         </article>
                     </div>
                 </div>
@@ -306,7 +324,7 @@
             <h2 class="t02">About Us</h2>
             <hr class="t03"><br><br>
             <div class="cont_paquetes">
-                <article class="price_paquete">
+                <article class="price_paquete wow animate__animated animate__fadeInDown">
                     <div class="paquete_costo acordeon">
                         <p>BASIC</p>
                         <span>Beneficios</span>
@@ -325,7 +343,7 @@
                     <br>
                     <a href="#">Contrata Ahora</a>
                 </article>
-                <article class="price_paquete">
+                <article class="price_paquete wow animate__animated animate__fadeInDown">
                     <div class="paquete_costo acordeon">
                         <p>STANDARD</p>
                         <span>Beneficios</span>
@@ -344,7 +362,7 @@
                     <br>
                     <a href="#">Contrata Ahora</a>
                 </article>
-                <article class="price_paquete">
+                <article class="price_paquete wow animate__animated animate__fadeInDown">
                     <div class="paquete_costo acordeon">
                         <p>PROFESSIONAL</p>
                         <span>Beneficios</span>
@@ -366,16 +384,50 @@
             </div>
         </section><br>
         <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-        <section class="clientes">
-
-        </section><br>
+        <!-- <section class="clientes wow animate__animated animate__fadeInRight">
+            <h3 class="t01">WHAT WE DO</h3><br>
+            <h2 class="t02 blanco">Our Clients</h2>
+            <hr class="t03"><br><br>
+            <div id="slide-container">
+                <article class="slide" data-slideIndex="0">
+                    <figure><img src="imagenes/cliente_1.jpg" alt=""></figure>
+                    <p>John Tuff</p>
+                    <p>Field Technician</p>
+                </article>
+                <article class="slide" data-slideIndex="1">
+                    <figure><img src="imagenes/cliente_2.jpg" alt=""></figure>
+                    <p>Frank Mc Millian</p>
+                    <p>General manager</p>
+                </article>
+                <article class="slide" data-slideIndex="2">
+                    <figure><img src="imagenes/cliente_3.jpg" alt=""></figure>
+                    <p>John Smith</p>
+                    <p>Field Technician</p>
+                </article>
+                <article class="slide" data-slideIndex="3">
+                    <figure><img src="imagenes/cliente_4.jpg" alt=""></figure>
+                    <p>John Snow</p>
+                    <a>Lord Comandante</a>
+                </article>
+                <article class="slide" data-slideIndex="4">
+                    <figure><img src="imagenes/cliente_5.jpg" alt=""></figure>
+                    <p>Robert Stark</p>
+                    <p>Wolf Young</p>
+                </article>
+                <article class="slide" data-slideIndex="5">
+                    <figure><img src="imagenes/cliente_6.jpg" alt=""></figure>
+                    <p>Bran Stark</p>
+                    <p>Three-eyed Raven</p>
+                </article>
+                </div>
+        </section><br> -->
         <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <section class="blog">
             <h3 class="t01">Latest Articles</h3><br>
             <h2 class="t02">Our Latest Blog</h2>
             <hr class="t03"><br><br>
             <div class="blog_noticias">
-                <div class="noticia">
+                <div class="noticia wow animate__animated animate__fadeInLeft">
                     <figure><img src="imagenes/blog-img1.jpg" alt=""></figure>
                     <div class="noticia_descrip">
                         <p>Designing</p>
@@ -387,7 +439,7 @@
                         <a href="#">Leer Mas</a>
                     </div>
                 </div>
-                <div class="noticia">
+                <div class="noticia wow animate__animated animate__fadeInUp">
                     <figure><img src="imagenes/blog-img2.jpg" alt=""></figure>
                     <div class="noticia_descrip">
                         <p>Designing</p>
@@ -399,7 +451,7 @@
                         <a href="#">Leer Mas</a>
                     </div>
                 </div>
-                <div class="noticia">
+                <div class="noticia wow animate__animated animate__fadeInRight">
                     <figure><img src="imagenes/blog-img3.jpg" alt=""></figure>
                     <div class="noticia_descrip">
                         <p>Designing</p>
@@ -415,32 +467,33 @@
         </section>
         <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <section class="Contact">
-            <div class="formulario_descrip">
+            <div class="formulario_descrip wow animate__animated animate__fadeInLeft">
                 <h2>Request Booking</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, doloribus. Suscipit sequi necessitatibus nihil, consequuntur tenetur quae minima ullam veritatis!</p>
             </div>
-            <div class="formulario">
+            <div class="formulario wow animate__animated animate__fadeInRight">
                 <form>
                     <div class="input-row">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
                     </div>
-                    <input type="email" placeholder="Email">
-                    <input type="tel" placeholder="Phone">
-                    <textarea placeholder="Message" rows="5"></textarea>
-                    <button type="submit">Send</button>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone" required>
+                    <textarea placeholder="Message" rows="5"></textarea required>
+                    <button class="btn_enviar" type="submit">Get Appoitment</button>
                 </form>
             </div>
         </section>
+        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
         <footer>
             <div class="footer_up">
-                <div class="colum a01">
+                <div class="colum a01 wow animate__animated animate__fadeInLeft">
                     <figure><img src="imagenes/footer-logo.png" alt=""></figure>
                     <p>We provide expert Business Coaching to both individuals and businesses. With over 30 years of experience we’ll ensure that you’re always getting the best guidance from the top people in the entire industry.</p><br>
                     <a href="#"><i class="fa-regular fa-clock"></i>   Monday -Sturday at 09am-6pm</a>
                     <a href="#"><i class="fa-solid fa-house"></i>         52 Tailstoi Town 546 IT, NYC</a>
                 </div>
-                <div class="colum a02">
+                <div class="colum a02 wow animate__animated animate__fadeInLeft">
                     <h2>Latest News</h2>
                     <article>
                         <figure><img src= "imagenes/footer_1.jpg" alt=""></figure>
@@ -455,7 +508,7 @@
                         </p>
                     </article>
                 </div>
-                <div class="colum a03">
+                <div class="colum a03 wow animate__animated animate__fadeInLeft">
                     <h2>Newsletter</h2>
                     <p>Sign up for our mailing list to get latest updates and offers.</p>
                     <form action="#">
@@ -477,8 +530,8 @@
                 </div>
             </div>
             <div class="footer_down">
-                <p>© 2020 All Rights Reserved.</p>
-                <ul>
+                <p class="wow animate__animated animate__fadeInUp">© 2020 All Rights Reserved.</p>
+                <ul class="wow animate__animated animate__fadeInUp">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms & Conditions</a></li>
@@ -496,13 +549,13 @@
         // slide responsive
         $(function () {
             $("#slider1").responsiveSlides({
-                auto: true,     // ❌ No automático
-                pager: true,     // ✅ Mostrar botones de navegación
-                nav: false,// ❌ No flechas prev/next (opcional)
-                speed: 500,// Velocidad del cambio (si se usan flechas)
-                timeout: 4000,// Tiempo entre cambios (si auto: true)
-                pause: true,     // Pausar al pasar el mouse (si auto: true)
-                namespace: "rslides" // Prefijo para clases CSS generadas
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                timeout: 4000,
+                pause: true,
+                namespace: "rslides"
             });
         });
 
@@ -527,6 +580,13 @@
                 fondo.style.display = "none";
             }
         };
+        //animaciones
+        new WOW().init();
+        //fancy box
+        Fancybox.bind("[data-fancybox]", {
+                // Your custom options
+            });
     </script>
+    <script src="js/carrousel.js"></script>
 </body>
 </html>
